@@ -210,11 +210,13 @@
 						</p>
 						<ol>
 							<li>
-								Kerjasama antara UTDI dengan asal sekolah (SMA/SMK/MA) calon
-								mahasiswa.
+								Kerjasama antara Kampus Bagus dengan asal sekolah (SMA/SMK/MA)
+								calon mahasiswa.
 							</li>
-							<li>Siswa yang pernah melakukan kunjungan industri di UTDI</li>
-							<li>Siswa yang pernah melakukan PRAKERIN/PKL di UTDI</li>
+							<li>
+								Siswa yang pernah melakukan kunjungan industri di Kampus Bagus
+							</li>
+							<li>Siswa yang pernah melakukan PRAKERIN/PKL di Kampus Bagus</li>
 						</ol>
 					</div>
 					<div class="dropdown-container">
@@ -291,6 +293,126 @@
 				<div class="image-container">
 					<img
 						src="../assets/img/landing2.png"
+						alt="Group of students wearing graduation sashes"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="contact cont2" style="margin-top: -25%">
+			<div class="pendaftaran container container2">
+				<div class="content2">
+					<h1>Jalur <span class="highlight">Beasiswa</span></h1>
+					<div class="section">
+						<h2>Beasiswa</h2>
+						<p>
+							Jalur beasiswa merupakan pendaftaran mahasiswa baru dimana
+							penerima beasiswa adalah calon mahasiswa yang telah memenuhi
+							kriteria tertentu dari pemberi beasiswa, dalam bentuk
+							beasiswa/pembiayaan kuliah secara penuh dan/atau sebagian.
+							Beasiswa Kampus Bagus Jalur ini memberikan beasiswa penuh berupa
+							pembebasan biaya SPA dan SPP tiap semester kepada calon mahasiswa
+							baru hingga lulus. Calon harus mendaftar dan mengikuti seleksi
+							yang telah ditetapkan oleh Kampus Bagus.
+						</p>
+					</div>
+					<div class="section">
+						<h2>Beasiswa KIP Kuliah Merdeka dari "Kampus Bagus"</h2>
+						<p>
+							Beasiswa KIP - Kuliah merupakan bantuan biaya pendidikan dari
+							pemerintah Republik Indonesia melalui Direktorat Jenderal
+							Pembelajaran dan Kemahasiswaan, Kementerian Pendidikan Nasional
+							bekerja sama dengan Kampus Bagus bagi calon mahasiswa yang tidak
+							mampu secara ekonomi dan memiliki potensi akademik yang baik.
+							Kebijakan beasiswa akan mengikuti aturan dari pemerintah.
+						</p>
+					</div>
+					<div class="dropdown-container">
+						<div
+							class="dropdown"
+							onclick="toggleDropdown('dropdown1-content2')"
+						>
+							<span>Syarat dan Ketentuan Berkas</span>
+							<i class="fas fa-chevron-down"></i>
+						</div>
+						<div class="dropdown-content hidden" id="dropdown1-content2">
+							<p>
+								Detail syarat dan ketentuan berkas yang diperlukan untuk
+								pendaftaran:
+							</p>
+							<ul>
+								<li>Fotokopi rapor semester 1-5</li>
+								<li>Surat rekomendasi dari sekolah</li>
+								<li>Fotokopi sertifikat prestasi akademik/non-akademik</li>
+								<li>Pas foto terbaru ukuran 3x4</li>
+							</ul>
+						</div>
+						<div
+							class="dropdown"
+							onclick="toggleDropdown('dropdown2-content2')"
+						>
+							<span>Biaya dan Jadwal Pendaftaran</span>
+							<i class="fas fa-chevron-down"></i>
+						</div>
+						<div class="dropdown-content hidden" id="dropdown2-content2">
+							<p>Detail biaya dan jadwal pendaftaran:</p>
+							<table>
+								<thead>
+									<tr>
+										<th>Item</th>
+										<th>Detail</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Biaya pendaftaran</td>
+										<td>Rp 500.000</td>
+									</tr>
+									<tr>
+										<td>Jadwal pendaftaran</td>
+										<td>1 Januari - 31 Maret</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div
+							class="dropdown"
+							onclick="toggleDropdown('dropdown3-content2')"
+						>
+							<span>Prosedur Pendaftaran</span>
+							<i class="fas fa-chevron-down"></i>
+						</div>
+						<div class="dropdown-content hidden" id="dropdown3-content2">
+							<p>Detail prosedur pendaftaran:</p>
+							<ul>
+								<li>Isi formulir pendaftaran online</li>
+								<li>Unggah berkas yang diperlukan</li>
+								<li>Bayar biaya pendaftaran</li>
+								<li>Konfirmasi pendaftaran melalui email</li>
+							</ul>
+						</div>
+						<div
+							class="dropdown"
+							onclick="toggleDropdown('dropdown4-content2')"
+						>
+							<span>Potongan Sumbangan Pengembangan Akademik</span>
+							<i class="fas fa-chevron-down"></i>
+						</div>
+						<div class="dropdown-content hidden" id="dropdown4-content2">
+							<p>Detail potongan sumbangan pengembangan akademik:</p>
+							<ul>
+								<li>Potongan 50% untuk siswa berprestasi</li>
+								<li>Potongan 25% untuk siswa dari sekolah mitra</li>
+							</ul>
+						</div>
+					</div>
+					<div class="button-container">
+						<button>DAFTAR SEKARANG</button>
+					</div>
+				</div>
+				<div class="image-container2">
+					<img
+						src="../assets/img/landing3.png"
 						alt="Group of students wearing graduation sashes"
 					/>
 				</div>
@@ -397,19 +519,11 @@
 				function toggleDropdown(id) {
 					var content = document.getElementById(id);
 					if (content) {
-						if (
-							content.style.display === "none" ||
-							content.style.display === ""
-						) {
-							content.style.display = "block";
-						} else {
-							content.style.display = "none";
-						}
+						content.classList.toggle("show");
 					} else {
 						console.error(`Dropdown dengan id "${id}" tidak ditemukan.`);
 					}
 				}
-
 				window.toggleDropdown = toggleDropdown;
 			});
 		</script>
