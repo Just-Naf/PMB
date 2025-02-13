@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Mahasiswa Baru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="../assets/img/logos/logoK.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/form.css">
+</head>
+<body class="bg-gray-100">
+    <header class="navb text-white p-4 flex justify-between items-center">
+        <div class="text-lg font-bold">PMB Kampus Bagus</div>
+        <div>
+            <a href="#" class="mr-4">Login</a>
+            <a href="#">Daftar</a>
+        </div>
+    </header>
+    <main class="max-w-4xl mx-auto p-4">
+        <h1 class="judul text-2xl font-bold text-center mt-8">Pendaftaran Mahasiswa Baru</h1>
+        <p class="judull text-center text-lg mb-8">Tahun Ajaran 2025/2026</p>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-xl font-bold mb-4">Pilihan Jalur</h2>
+            <div class="mb-4">
+                <label class="block mb-2">Jalur Masuk</label>
+                <select class="w-full p-2 border rounded">
+                    <option>Pilih Jalur</option>
+                    <option>Jalur Reguler</option>
+                    <option>Jalur KIPK</option>
+                    <option>Jalur Beasiswa</option>
+                </select>
+            </div>
+            <div>
+                <label class="block mb-2">Jalur Seleksi</label>
+                <div class="space-y-1">
+                    <div class="text-sm">
+                        <input type="radio" id="jalur1" name="jalur" class="mr-1">
+                        <label for="jalur1">S1-Sistem Informasi</label>
+                    </div>
+                    <div class="text-sm">
+                        <input type="radio" id="jalur2" name="jalur" class="mr-1">
+                        <label for="jalur2">S1-Informatika</label>
+                    </div>
+                    <div class="text-sm">
+                        <input type="radio" id="jalur3" name="jalur" class="mr-1">
+                        <label for="jalur3">S1-Teknik Komputer</label>
+                    </div>
+                    <div class="text-sm">
+                        <input type="radio" id="jalur4" name="jalur" class="mr-1">
+                        <label for="jalur4">S1-Sistem Pertahanan</label>
+                    </div>
+                    <div class="text-sm">
+                        <input type="radio" id="jalur5" name="jalur" class="mr-1">
+                        <label for="jalur5">S2-Marketing</label>
+                    </div>
+                    <div class="text-sm">
+                        <input type="radio" id="jalur6" name="jalur" class="mr-1">
+                        <label for="jalur6">S3-Hukum</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-xl font-bold mb-4">Tentang diri Anda</h2>
+            <div class="mb-4">
+                <label class="block mb-2">Nama</label>
+                <input type="text" class="w-full p-2 border rounded">
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2">NIK (Nomor Induk Kependudukan)</label>
+                <input type="text" class="w-full p-2 border rounded">
+            </div>
+            <div class="flex space-x-4 mb-4">
+                <div class="w-1/2">
+                    <label class="block mb-2">Tempat Lahir</label>
+                    <input type="text" class="w-full p-2 border rounded">
+                </div>
+                <div class="w-1/2">
+                    <label class="block mb-2">Tanggal Lahir</label>
+                    <input type="text" class="w-full p-2 border rounded" placeholder="DD-MM-YYYY">
+                </div>
+            </div>
+            <div class="flex space-x-4 mb-4">
+                <div class="w-1/2">
+                    <label class="block mb-2">Jenis Kelamin</label>
+                    <select class="w-full p-2 border rounded">
+                        <option>Laki-laki</option>
+                        <option>Perempuan</option>
+                    </select>
+                </div>
+                <div class="w-1/2">
+                    <label class="block mb-2">Agama</label>
+                    <select class="w-full p-2 border rounded">
+                        <option>ISLAM</option>
+                        <option>KRISTEN</option>
+                        <option>KATOLIK</option>
+                        <option>HINDU</option>
+                        <option>BUDDHA</option>
+                        <option>KONGHUCU</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2">Email</label>
+                <input type="email" class="w-full p-2 border rounded">
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2">No. WhatsApp</label>
+                <input type="text" class="w-full p-2 border rounded">
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2">Alamat</label>
+                <input type="text" class="w-full p-2 border rounded">
+            </div>
+            <div class="flex space-x-4 mb-4">
+                <div class="w-1/4">
+                    <label class="block mb-2">RT</label>
+                    <input type="text" class="w-full p-2 border rounded">
+                </div>
+                <div class="w-1/4">
+                    <label class="block mb-2">RW</label>
+                    <input type="text" class="w-full p-2 border rounded">
+                </div>
+                <div class="w-1/4">
+                    <label class="block mb-2">Desa/Kelurahan</label>
+                    <input type="text" class="w-full p-2 border rounded">
+                </div>
+                <div class="w-1/4">
+                    <label class="block mb-2">Kecamatan</label>
+                    <input type="text" class="w-full p-2 border rounded">
+                </div>
+            </div>
+            <div class="flex space-x-4 mb-4">
+                <div class="w-1/2">
+                    <label class="block mb-2">Kota/Kabupaten</label>
+                    <select class="w-full p-2 border rounded">
+                        <option>PILIH KOTA/KABUPATEN</option>
+                    </select>
+                </div>
+                <div class="w-1/2">
+                    <label class="block mb-2">Provinsi</label>
+                    <select class="w-full p-2 border rounded">
+                        <option>PILIH PROVINSI</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-xl font-bold mb-4">Tentang Sekolah Anda</h2>
+            <div class="mb-4">
+                <label class="block mb-2">NISN (Nomor Induk Siswa Nasional)</label>
+                <input type="text" class="w-full p-2 border rounded">
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2">Nama Sekolah</label>
+                <input type="text" class="w-full p-2 border rounded">
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2">Jurusan Sekolah</label>
+                <input type="text" class="w-full p-2 border rounded">
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2">Alamat Sekolah</label>
+                <input type="text" class="w-full p-2 border rounded">
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2">Upload Ijazah, rapor atau pas foto (maks. 5MB)</label>
+                <input type="file" class="w-full p-2 border rounded">
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button class="submit text-white w-full max-w-4xl mx-auto px-6 py-2 rounded-lg">Simpan</button>
+        </div>
+    </main>
+</body>
+</html>
