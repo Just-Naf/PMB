@@ -486,6 +486,12 @@ footer {
 	border-radius: 8px;
 	width: 55%;
 }
+.pendaftaran .content2 {
+	background-color: #ffffff;
+	padding: 24px;
+	border-radius: 8px;
+	width: 55%;
+}
 
 .pendaftaran .image-container {
 	width: 100%;
@@ -513,6 +519,9 @@ footer {
 	.pendaftaran .content {
 		width: 55%;
 	}
+	.pendaftaran .content2 {
+		width: 55%;
+	}
 
 	.pendaftaran .image-container {
 		width: 45%;
@@ -537,6 +546,7 @@ footer {
 
 	.pendaftaran .image-container img {
 		max-width: 300px;
+		margin-top: 115%;
 	}
 }
 
@@ -588,8 +598,9 @@ footer {
 	overflow: hidden;
 	transition: max-height 0.3s ease-in-out;
 }
-.pendaftaran .dropdown-content.show{
+.pendaftaran .dropdown-content.show {
 	max-height: 500px;
+	display: block;
 }
 .pendaftaran .dropdown-content p {
 	margin-bottom: 8px;
@@ -625,7 +636,92 @@ footer {
 }
 
 .dropdown-content {
-    display: none;
+	display: none;
+}
+
+
+.pendaftaran .container2 {
+	display: grid !important;
+	grid-template-columns: 1fr 1fr;
+	align-items: center !important;
+	justify-content: space-between !important;
+	gap: 20px;
+	width: 100%;
+}
+.pendaftaran .content2 {
+	background-color: #ffffff;
+	padding: 24px;
+	border-radius: 8px;
+	width: 55%;
+	position: relative;
+	left: 110%;
+	transform: translateX(-110%);
+	justify-content: end;
+}
+
+.pendaftaran .image-container2 {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.pendaftaran .image-container2 img {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	border-radius: 8px;
+	position: relative;
+	bottom: 525px;
+}
+
+@media (max-width: 900px) {
+	.pendaftaran .container2 {
+		display: grid !important;
+		grid-template-columns: 1fr 1fr; /* Tetap sejajar */
+		align-items: flex-end;
+	}
+
+	.pendaftaran .content {
+		width: 55%;
+	}
+	.pendaftaran .content2 {
+		width: 55%;
+	}
+
+	.pendaftaran .image-container2 {
+		width: 45%;
+	}
+}
+
+@media (max-width: 768px) {
+	.pendaftaran .container2 {
+		grid-template-columns: 1fr;
+		align-items: center;
+	}
+
+	.pendaftaran .content {
+		width: 100%;
+		text-align: center;
+	}
+
+	.pendaftaran .content2 {
+		width: 100%;
+		left: 0;
+		transform: translateX(0);
+		text-align: center;
+		margin-top: -80%;
+	}
+
+	.pendaftaran .image-container2 {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.pendaftaran .image-container2 img {
+		max-width: 300px;
+		margin-top: 115%;
+	}
 }
 
 /*footer*/
