@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	const navItems = document.querySelectorAll(".nav-link");
 
 	if (menuButton && navLinks && content) {
-		// Toggle menu untuk mobile
 		menuButton.addEventListener("click", function () {
 			navLinks.classList.toggle("active");
 
@@ -17,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 
-	// Pastikan fungsi dropdown bisa dipanggil dari HTML
+	// dropdown
 	window.toggleDropdown = function (id) {
 		const dropdown = document.getElementById(id);
 		if (dropdown) {
@@ -27,11 +26,25 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	};
 
-	// Fungsi untuk smooth scroll saat klik menu
+	document.querySelectorAll(".accordion-item").forEach((item) => {
+		item.addEventListener("click", () => {
+			const content = item.nextElementSibling;
+			const icon = item.querySelector(".fa-chevron-down");
+			if (content.style.display === "block") {
+				content.style.display = "none";
+				icon.style.transform = "rotate(0deg)";
+			} else {
+				content.style.display = "block";
+				icon.style.transform = "rotate(180deg)";
+			}
+		});
+	});
+
+	// smooth
 	if (navItems.length > 0) {
 		navItems.forEach((link) => {
 			link.addEventListener("click", function (e) {
-				e.preventDefault(); // Mencegah reload halaman
+				e.preventDefault();
 
 				const targetId = this.getAttribute("href").substring(1);
 				const targetElement = document.getElementById(targetId);
