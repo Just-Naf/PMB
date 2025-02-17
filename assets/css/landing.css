@@ -429,6 +429,7 @@ footer {
 	#home,
 	#about,
 	#video,
+	#biaya
 	#contact {
 		position: relative;
 		transition: transform 0.4s ease-in-out;
@@ -486,6 +487,12 @@ footer {
 	border-radius: 8px;
 	width: 55%;
 }
+.pendaftaran .content3 {
+	background-color: #ffffff;
+	padding: 24px;
+	border-radius: 8px;
+	width: 55%;
+}
 .pendaftaran .content2 {
 	background-color: #ffffff;
 	padding: 24px;
@@ -520,6 +527,9 @@ footer {
 		width: 55%;
 	}
 	.pendaftaran .content2 {
+		width: 55%;
+	}
+	.pendaftaran .content3 {
 		width: 55%;
 	}
 
@@ -584,6 +594,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	cursor: pointer;
+	/*transition: max-height 0.4s ease-out, opacity 0,3s ease, transform 0,3s ease;*/
 }
 .pendaftaran .dropdown span {
 	font-size: 0.75rem;
@@ -596,11 +607,19 @@ footer {
 	color: var(--color-third);
 	display: none;
 	overflow: hidden;
-	transition: max-height 0.3s ease-in-out;
+	max-height: 0;
+	opacity: 0;
+	transition: max-height 0.5s ease-in-out, opacity 0,3s ease-in-out;
 }
+/*.pendaftaran .dropdown.active{
+	max-height: 200px;
+	opacity: 1;
+	transform: translateY(0);
+}*/
 .pendaftaran .dropdown-content.show {
 	max-height: 500px;
 	display: block;
+	opacity: 1;
 }
 .pendaftaran .dropdown-content p {
 	margin-bottom: 8px;
@@ -623,6 +642,8 @@ footer {
 	margin-top: 16px;
 }
 .pendaftaran .button-container button {
+	width: 100%;
+	height: 100%;
 	background-color: var(--color-third);
 	color: #ffffff;
 	font-weight: 600;
@@ -630,6 +651,7 @@ footer {
 	border-radius: 8px;
 	border: none;
 	cursor: pointer;
+	transition: background-color 0.3s ease, transfrom 0.2s ease;
 }
 .pendaftaran .button-container button:hover {
 	background-color: var(--color-primary);
@@ -712,6 +734,13 @@ footer {
 		text-align: center;
 		margin-top: -80%;
 	}
+	.pendaftaran .content3 {
+		width: 100%;
+		left: 0;
+		transform: translateX(0);
+		text-align: center;
+		margin-top: -80%;
+	}
 
 	.pendaftaran .image-container2 {
 		width: 100%;
@@ -724,4 +753,69 @@ footer {
 	}
 }
 
-/*footer*/
+/*biaya*/
+.biaya{
+	margin-top: -350px;
+	margin-bottom: 10%;
+}
+        body.biayaPen {
+            background-color: #f7fafc;
+            font-family: Arial, sans-serif;
+        }
+        .biayaPen .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+        .biayaPen .text-center {
+            text-align: center;
+        }
+        .biayaPen .text-center h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2d3748;
+        }
+        .biayaPen .text-center p {
+            color: #718096;
+            margin-top: 0.2rem;
+			font-size: 0.75rem;
+        }
+        .biayaPen .text-center .underline {
+            width: 4rem;
+            height: 0.25rem;
+            background-color: var(--color-primary);
+            margin: 1rem auto 0;
+        }
+        .biayaPen .accordion {
+            margin-top: 2rem;
+        }
+        .biayaPen .accordion-item {
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
+        .biayaPen .accordion-item i {
+            color: var(--color-third);
+			margin-right: 10px;
+        }
+        .biayaPen .accordion-item span {
+            color: #2d3748;
+            font-weight: 600;
+			font-size: 0.75rem;
+        }
+        .biayaPen .accordion-item .fa-chevron-down {
+            color: #2d3748;
+        }
+        .biayaPen .accordion-content {
+            display: none;
+            padding: 1rem;
+            background-color: #f7fafc;
+            border-top: 1px solid #e2e8f0;
+			font-size: 0.7rem;
+        }
